@@ -12,11 +12,10 @@ module.exports = {
 	.setColor('#0099ff')
     .setTitle('디스코드 봇 서버정보')
     .addFields(
-		{ name: '운영체제 아키텍처', value: os.arch() },
+	{ name: '운영체제 아키텍처', value: os.arch() },
         { name: '운영체제', value: os.type() },
-		{ name: '운영체제 버전(커널버전)', value: os.release() },
         { name: '서버 cpu 쓰레드(수)', value: cpu },
-		{ name: '서버 cpu ', value: model }
+	{ name: '서버 cpu ', value: model }
 	)    
     message.channel.send(ver);
 
