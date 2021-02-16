@@ -127,8 +127,10 @@ client.on('ready', () => {
         case "별자리" :
             client.commands.get('star').execute(message, args);
             break;
-  
-          
+        case "서버정보" :
+            client.commands.get('ver').execute(message, args);
+            break;
+            
     };
 
     //switch문에서 안되면 여기에 넣어서 한번 시도해보세요
