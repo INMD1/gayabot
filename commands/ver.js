@@ -5,7 +5,6 @@ module.exports = {
     const os = require('os');
     var cpus = os.cpus();
     for(var i = 0; i < cpus.length; i++) {
-        var cpu = ("CPU[" + (i+1) + "]");
         var model = ("model: " + cpus[i].model);
     }
     const ver = new Discord.MessageEmbed()
@@ -14,7 +13,6 @@ module.exports = {
     .addFields(
 	{ name: '운영체제 아키텍처', value: os.arch() },
         { name: '운영체제', value: os.type() },
-        { name: '서버 cpu 쓰레드(수)', value: cpu },
 	{ name: '서버 cpu ', value: model }
 	)    
     message.channel.send(ver);
