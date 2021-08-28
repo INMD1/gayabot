@@ -110,4 +110,3 @@ if 문에서 모듈을 추가하는 방법은
 # 기타봇문의
 이메일:lyw514549@gmail.com
 디스코드:https://discord.gg/XVWmPcT
-# gayabot
