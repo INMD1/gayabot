@@ -3,7 +3,7 @@ module.exports = {
 	execute(message) {        
 	const  Discord = require("discord.js"); //안쓸떄는 지워도 되요 근데 오류나면 지우세요.
     if (message.content.startsWith('소라고동','소라고동님','마법에 소라고동')) { 
-        var ask = ["안돼", "물론", "넌 왜그러니 나한데", "안되요", "그건좀..", "stop!", "다시 해봐", "나도 몰라", "하면 윤지원", "그래", "되", "돌아가"];
+        var ask = ["안돼", "물론", "넌 왜그러니 나한데", "안되요", "그건좀..", "stop!", "다시 해봐", "나도 몰라", "하면 윤지원", "그래", "돼", "돌아가"];
         var askuNum = Math.floor(Math.random()*12);
         var result = ask[askuNum];
         console.log("정상적으로 답변을 보냄(소라고동 명렁어 부분)")
