@@ -1,0 +1,11 @@
+node_modules
+
+*.json
+
+*.png
+
+*.jpg
+
+!scret template.json
+
+!config template.json
