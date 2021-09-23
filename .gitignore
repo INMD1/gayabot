@@ -9,3 +9,5 @@ node_modules
 !scret template.json
 
 !config template.json
+
+namechange.js
