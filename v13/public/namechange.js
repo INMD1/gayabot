@@ -23,5 +23,4 @@ module.exports = {
 
         interaction.reply({content: `${user.username}에서 ${data} 로 이름을 바꾸었습니다!` , ephemeral: true})
 	},
-
 };
