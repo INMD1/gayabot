@@ -1,11 +1,10 @@
 const fs = require('fs');
 const { Client, Collection, Intents } = require('discord.js');
-const {
-	token
-} = require('./jsonfile/config.json');
+const {token} = require('./jsonfile/config.json');
 const client = new Client({
-	intents: [Intents.FLAGS.GUILDS]
-});
+    intents: [Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILDS, Intents.FLAGS.DIRECT_MESSAGES, Intents.FLAGS.GUILD_BANS],
+    partials: ["MESSAGE", "CHANNEL"],
+})
 const os = require('os');
 
 //커맨드 명령어들 불러오는 코드
